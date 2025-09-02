@@ -1,0 +1,68 @@
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.signInup-container {
+  background: #ffffff;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin: 2 rem;
+}
+
+.input-group {
+  display:inline-block;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.input-group input {
+  width: 300px;
+  flex-grow: 1;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+}
+
+.input-group button {
+  display:block;
+  padding: 15px 150px;
+  background-color: rgb(37, 114, 230);
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  border: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: --background-color 0.3s transform 0.1s;
+}
+
+.input-group.completed {
+  background-color: #e8eaed;
+  text-decoration: line-through;
+  color: var(--completed-color);
+}
